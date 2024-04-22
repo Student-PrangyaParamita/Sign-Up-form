@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+<body>
+    <div style="display: flex; justify-content: space-evenly;">
+        <div style="width: 50%; border: 3px solid black; border-radius: 8px; padding: 20px;">
+            <div>
+                <h1>User Details</h1>
+                Name: <input type="text" placeholder="Enter your name">
+                <br><br>
+                <fieldset>
+                    <legend>Gender:</legend> 
+                        <input type="radio" value="male" name="class" id="201">Male
+                        
+                        <input type="radio" value="female" name="class" id="201">Female
+                </fieldset>
+                
+                <br>
+                Address:
+                <textarea name="Address" id="Address" row="5"></textarea>
+                <br><br>
+                Email: <input type="email" placeholder="Enter your email">
+                <br><br>
+                Pincode: <input type="number" placeholder="Pincode">
+            </div>
+            <div class="payment">
+                <h1>Payment Details</h1>
+                Card type: <input type="text">
+                <p>
+                    Card type:
+                    <select name="card_type" id="card_type">
+                        <option value="">------Select Card------</option>
+                        <option value="visa">Visa</option>
+                        <option value="rupay">Rupay</option>
+                        <option value="master">Master</option>
+                        <option value="debit">Debit</option>
+                        <option value="credit">Credit</option>
+                    </select>
+                </p>
+                Expiration Date: <input type="date,month">
+                <br> <br>
+                CVV: <input type="text">
+            </div>
+            <br>
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <input type="submit" style="padding: 5px; font-size: 1rem;">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
